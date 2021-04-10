@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby CSV`,
+    title: `Gatsby IMDB CSV`,
     description: `Kick off your next, great Gatsby project with this a CSV file as your data source.`,
     author: `@whatjackhasmade`,
   },

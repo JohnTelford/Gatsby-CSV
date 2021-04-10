@@ -22,13 +22,14 @@ export default () => (
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Using a CSV as a data source in Gatsby</h1>
-    <p>These people were found in the CSV file.</p>
+    <h2>Using a CSV as a data source in Gatsby</h2>
+    <p>These fields were found in johnwayne.csv test file.</p>
     <ul>
-          <li>
-            {data.johnwayneCsv.nconst} - {data.johnwayneCsv.primaryName} - {data.johnwayneCsv.primaryProfession}
-          </li>
-        
+          <li> nconst: {data.johnwayneCsv.nconst}</li>
+          <li>primaryName: {data.johnwayneCsv.primaryName}</li>
+          <li>birthYear: {data.johnwayneCsv.birthYear}</li>
+          <li>deathYear: {data.johnwayneCsv.deathYear}</li>
+          <li>primaryProfession: {data.johnwayneCsv.primaryProfession}</li>        
     </ul>
   </Layout>
 )
