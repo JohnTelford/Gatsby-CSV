@@ -11,6 +11,8 @@ export default () => (
           johnwayneCsv {
             nconst
             primaryName
+            birthYear
+            deathYear
             primaryProfession
           }
         }
