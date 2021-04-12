@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 export const query =graphql`
       query Johnwayne {
-          johnwayneCsv {
+        namebasicsCsv ({primaryName: {"John Wayne})
             nconst
             primaryName
             birthYear
@@ -19,6 +19,7 @@ export const query =graphql`
 
 const IndexPage = ({ data }) => {
     return(
+      <Layout>
       <div>
         <SEO title="Home" />
         <h2>Using a CSV as a data source in Gatsby</h2>
@@ -31,6 +32,7 @@ const IndexPage = ({ data }) => {
               <li>primaryProfession: {data.johnwayneCsv.primaryProfession}</li>        
         </ul>
     </div>
+    </Layout>
   )
 }
 
