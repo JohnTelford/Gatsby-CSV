@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 export default () => (
   <StaticQuery
     query={graphql`
-      query Csv {
+      query Johnwayne {
           johnwayneCsv {
             nconst
             primaryName
